@@ -1,0 +1,14 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "name": "Malin B",
+      "body": "Using fixtures is a great way to mock data for responses to routes"
+    },
+    {
+      "id": 2,
+      "name": "Yazeen J",
+      "body": "Hell yeah! :D "
+    }
+  ]
+}

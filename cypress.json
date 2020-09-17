@@ -1,0 +1,12 @@
+{
+  "supportFile": "cypress/support/index.js",
+  "baseUrl": "http://localhost:3000",
+  "ignoreTestFiles": "!*.feature",
+  "nodeVersion": "system",
+  "chromeWebSecurity": false,
+  "viewportWidth": 1280,
+  "viewportHeight": 1024,
+  "screenshotOnRunFailure": true,
+  "video": true,
+  "pageLoadTimeout": 120000
+}
