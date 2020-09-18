@@ -8,6 +8,7 @@ To run db run command in terminal:
 json-server --watch db.json
 
 
+You have to run your frontend server (npm start) and backend server (json-server --watch db.json) to run cypress.
 
 All the tests are run from the integrations folder.
 Softhouseday.feature works together with the corresponding folder/file (/softhouseday/softhouseday.js).
