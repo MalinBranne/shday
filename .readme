@@ -1,5 +1,14 @@
 Cypress template.
 
+This example is running a backend through json server.
+https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
+npm install -g json-server
+
+To run db run command in terminal:
+json-server --watch db.json
+
+
+
 All the tests are run from the integrations folder.
 Softhouseday.feature works together with the corresponding folder/file (/softhouseday/softhouseday.js).
 
