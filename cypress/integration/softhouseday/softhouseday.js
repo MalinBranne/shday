@@ -20,6 +20,10 @@ When(/^the user arrives to the application$/, () => {
    cy.wait('@fetchComments');
 });
 
+Then(/^a welcome message should be visible$/, () => {
+    cy.contains('Cypress is good !').should('exist');
+});
+
 Then(/^the text "([^"]*)" should be visible$/, (text) => {
     cy.contains(text).should('exist');
 });

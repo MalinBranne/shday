@@ -1,14 +1,13 @@
 Business Need: Showing my lovely co-workers how cypress works
 
-  Scenario: Pressing the button and the text changes color
+  Scenario: User clicks the button the text changes color
     Given the backend response contains data
     When the user arrives to the application
-    Then the text "Cypress is good" should be visible
+    Then a welcome message should be visible
     When the user clicks the button
-    Then the welcome message css "color" is "rgb(255, 0, 0)"
+    Then the welcome message css "color" is "red"
     When the user clicks the button
     Then the welcome message css "color" is "rgb(255, 255, 255)"
-
 
   Scenario: Fetching data and displaying it on the page
     Given the backend response contains data

@@ -1,0 +1,31 @@
+Cypress template.
+
+All the tests are run from the integrations folder.
+Softhouseday.feature works together with the corresponding folder/file (/softhouseday/softhouseday.js).
+
+I am using cucumber.js to structure the test code with BDD scenarios in the .feature file.
+The functions matching the scenario steps are found in the corresponding folder.
+
+use cy.server() and cy.route() to communicate with the api.
+
+If you want to do a real end-to-end test, simply do not add any response parameter to cy.route.
+If you want to stub the result you get back from the api request, add response: "fixture:yourfile.json" to the cy.route(). See example.
+In the fixtures folder you put your stubbed api request responses.
+
+In the integration/examples folder you can see example on how to use cypress with mocha, end examples of alot of assertions.
+To be able to run the tests in the integration/examples folder, you need to remove this line from cypress.json:
+  "ignoreTestFiles": "!*.feature"
+
+ Scripts:
+ "e2e:open" will open the cypress dashboard where you can run tests through the browser.
+ You can inspect network requests in the network tab and actions in the console tab.
+
+ "e2e:run" will run the tests without a browser.
+ If e2e:run encounters faliures screenshots will be saved in the screenshots folder. this feature can be turned of in the cypress.json file.
+ e2e:run also record the test, saving it in the videos folder. This feature can also be switched off.
+
+ The screenshots and videos folder will be cleared at the start of every e2e:run.
+
+ There is great documentation on cypress.io.
+
+ Happy coding! :)
